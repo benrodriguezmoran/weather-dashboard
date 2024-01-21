@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <style>
+        /* Add your styling here */
+    </style>
+</head>
+<body>
+
+    <!-- Search Form -->
+    <form id="searchForm">
+        <label for="cityInput">Enter City:</label>
+        <input type="text" id="cityInput" class="form-control">
+        <button type="button" onclick="searchCity()">Search</button>
+    </form>
+
+    <!-- Current Weather Section -->
+    <div id="currentWeather">
+        <h2 id="cityName"></h2>
+        <p id="currentDate"></p>
+        <img id="weatherIcon" alt="Weather Icon">
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+    </div>
+
+    <!-- 5-Day Forecast Section -->
+    <div id="forecast">
+        <h2>5-Day Forecast</h2>
+        <div class="forecastDay">
+            <p class="date"></p>
+            <img class="weatherIcon" alt="Weather Icon">
+            <p class="temperature"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+        <div class="forecastDay">
+            <p class="date"></p>
+            <img class="weatherIcon" alt="Weather Icon">
+            <p class="temperature"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+        <div class="forecastDay">
+            <p class="date"></p>
+            <img class="weatherIcon" alt="Weather Icon">
+            <p class="temperature"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+        <div class="forecastDay">
+            <p class="date"></p>
+            <img class="weatherIcon" alt="Weather Icon">
+            <p class="temperature"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+        <div class="forecastDay">
+            <p class="date"></p>
+            <img class="weatherIcon" alt="Weather Icon">
+            <p class="temperature"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+    </div>
+
+    <!-- Search History Section -->
+    <div id="searchHistory">
+        <h2>Search History</h2>
+        <ul id="historyList">
+            <!-- Search history items will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
